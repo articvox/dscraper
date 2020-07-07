@@ -1,0 +1,5 @@
+/.idea/
+__pycache__/
+/comments.pkl
+/venv/
+/history/comment_ids.pkl

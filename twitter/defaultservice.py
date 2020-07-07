@@ -9,11 +9,11 @@ from util.decorator import Decorator
 from twitter.service import TwitterService
 from twitter.tweet import Tweet
 
-CONSUMER_KEY = 'iKdtq47x8GbXyw1OekMCQI1KJ'
-CONSUMER_SECRET = 'buvZjYzFhGWs5wbiBg1OJGYbC9MGlxoJ2r8a7im8HB2vtxtZOq'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
 
-ACCESS_TOKEN_KEY = '1277117510446448641-HBdpOU6T8ZsJCST8Ret9kPHx9LG3hJ'
-ACCESS_TOKEN_SECRET = 'K0pC2lL9nmrNtT0kYeunuxS5WyR8Ux50yhAsZyV3codgd'
+ACCESS_TOKEN_KEY = ''
+ACCESS_TOKEN_SECRET = ''
 
 
 def decorate(log: str, tweet: Tweet) -> str:

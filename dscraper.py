@@ -23,5 +23,5 @@ if __name__ == '__main__':
     if args.delete is True:
         default_service.delete_all()
 
-    DBot(MockTwitterService() if args.debug else
-         default_service, args.limit).run()
+    DBot(MockTwitterService() if args.debug else default_service,
+         args.limit).run()

@@ -14,6 +14,7 @@ def set_arguments(arg_parser):
     arg_parser.add_argument('--reset', dest='reset', action='store_true', help='clear internal post history on init')
     arg_parser.add_argument('--delete', dest='delete', action='store_true', help='delete all posted tweets on init')
     arg_parser.add_argument('--truncate', dest='truncate', action='store_true', help='truncate tweets over limit')
+    arg_parser.add_argument('--limit', type=int, help='max amount of tweets to be posted in a cycle')
 
 
 def set_defaults(arg_parser):
@@ -21,3 +22,4 @@ def set_defaults(arg_parser):
     arg_parser.set_defaults(reset=False)
     arg_parser.set_defaults(delete=False)
     arg_parser.set_defaults(truncate=False)
+    arg_parser.set_defaults(limit=20)

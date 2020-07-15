@@ -47,7 +47,10 @@ def supplement(comment: Comment, article: Article) -> Comment:
     return comment
 
 
-def get_top_unposted_comments(count: int = 10) -> List[Comment]:
+def get_top_unposted_comments(count: int) -> List[Comment]:
+    if not count:
+        return []
+
     comments = flatten([[supplement(comment, article) for comment in get_comments(article.article_id)]
                         for article in get_articles()])
 
